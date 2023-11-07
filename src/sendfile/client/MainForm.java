@@ -289,7 +289,7 @@ public class MainForm extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(255, 153, 153));
+        jButton1.setBackground(new java.awt.Color(153, 185, 255));
         jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Gửi");
         jButton1.setEnabled(false);
@@ -310,7 +310,7 @@ public class MainForm extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("       Danh sách online");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/rabbit2.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo2.jpg"))); // NOI18N
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/check.png"))); // NOI18N
         jMenu2.setText("Tài Khoản");
