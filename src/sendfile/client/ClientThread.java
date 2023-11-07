@@ -41,7 +41,7 @@ public class ClientThread implements Runnable{
                 String CMD = st.nextToken();
                 switch(CMD){
                     case "CMD_MESSAGE":
-                        SoundEffect.MessageReceive.play(); //  Play Audio clip
+//                        SoundEffect.MessageReceive.play(); //  Play Audio clip
                         String msg = "";
                         String frm = st.nextToken();
                         while(st.hasMoreTokens()){

@@ -166,7 +166,7 @@ public class SendFile extends javax.swing.JFrame {
             }
         });
 
-        btnBrowse.setBackground(new java.awt.Color(255, 153, 153));
+        btnBrowse.setBackground(new java.awt.Color(153, 246, 255));
         btnBrowse.setForeground(new java.awt.Color(0, 0, 0));
         btnBrowse.setText("Tìm File");
         btnBrowse.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -180,7 +180,7 @@ public class SendFile extends javax.swing.JFrame {
 
         progressbar.setStringPainted(true);
 
-        btnSendFile.setBackground(new java.awt.Color(255, 153, 153));
+        btnSendFile.setBackground(new java.awt.Color(153, 255, 228));
         btnSendFile.setForeground(new java.awt.Color(0, 0, 0));
         btnSendFile.setText("Gửi File");
         btnSendFile.addActionListener(new java.awt.event.ActionListener() {
