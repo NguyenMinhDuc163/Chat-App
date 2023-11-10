@@ -18,7 +18,7 @@ public class ServerThread implements Runnable {
     boolean keepGoing = true;
     
     public ServerThread(int port, MainForm main){
-        main.appendMessage("[Server]: Máy Chủ hiện đang khởi động ở port "+ port);
+        main.appendMessage("[Server]: Máy Chủ đã được khởi động ở cổng "+ port);
         try {
             this.main = main;
             server = new ServerSocket(port);

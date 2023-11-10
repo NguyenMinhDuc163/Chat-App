@@ -81,11 +81,11 @@ public class SendFile extends javax.swing.JFrame {
         public void run() {
             try {
                 while(!Thread.currentThread().isInterrupted()){
-                    String data = dis.readUTF();  // Đọc nội dung của dữ liệu được nhận từ Server
+                    String data = dis.readUTF();
                     st = new StringTokenizer(data);
-                    String cmd = st.nextToken();  //  Lấy chữ đầu tiên từ dữ liệu
+                    String cmd = st.nextToken();
                     switch(cmd){
-                        case "CMD_RECEIVE_FILE_ERROR":  // Định dạng: CMD_RECEIVE_FILE_ERROR [Message]
+                        case "CMD_RECEIVE_FILE_ERROR":
                             String msg = "";
                             while(st.hasMoreTokens()){
                                 msg = msg+" "+st.nextToken();
@@ -95,8 +95,7 @@ public class SendFile extends javax.swing.JFrame {
                             this.closeMe();
                             break;
                             
-                        case "CMD_RECEIVE_FILE_ACCEPT":  // Định dạng: CMD_RECEIVE_FILE_ACCEPT [Message]
-                            /*  Bắt đầu khởi động thread File đính kèm   */
+                        case "CMD_RECEIVE_FILE_ACCEPT":
 
                             new Thread(new SendingFileThread(socket, file, sendTo, myusername, SendFile.this)).start();
                             break;
@@ -153,7 +152,7 @@ public class SendFile extends javax.swing.JFrame {
         btnSendFile = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Dịch vụ Gửi File - RabbitChat");
+        setTitle("Dịch vụ Gửi File - ChatRoom");
 
         jLabel1.setText("Chọn File :");
 

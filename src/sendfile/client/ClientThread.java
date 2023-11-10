@@ -37,11 +37,10 @@ public class ClientThread implements Runnable{
             while(!Thread.currentThread().isInterrupted()){
                 String data = dis.readUTF();
                 st = new StringTokenizer(data);
-                /** Get Message CMD **/
+
                 String CMD = st.nextToken();
                 switch(CMD){
                     case "CMD_MESSAGE":
-//                        SoundEffect.MessageReceive.play(); //  Play Audio clip
                         String msg = "";
                         String frm = st.nextToken();
                         while(st.hasMoreTokens()){
@@ -62,7 +61,6 @@ public class ClientThread implements Runnable{
                         break;
                     
                         
-                    //  hàm này sẽ thông báo đến client rằng có một file nhận, Chấp nhận hoặc từ chối file  
                     case "CMD_FILE_XD":  // Format:  CMD_FILE_XD [sender] [receiver] [filename]
                         String sender = st.nextToken();
                         String receiver = st.nextToken();
